@@ -1,10 +1,57 @@
+let x=1
+
 function fizzbuzz(n) {
 	// Write your code here
+	while (n>x){
+
+		if (Number.isInteger(x/3) && Number.isInteger(x/5)){
+			console.log ("FizzBuzz")
+			x++
+		}
+		else if (Number.isInteger(x/5)){
+			console.log("Buzz")
+			x++
+		}
+		else if (Number.isInteger(x/3)){
+			console.log("Fizz")
+			x++
+		}
+		else{
+			console.log(x)
+			x++
+		}
+	}
+		
+
+
+	if (Number.isInteger(n/3) && Number.isInteger(n/5)){
+		console.log("FizzBuzz")
+	}
+	else if (Number.isInteger(n/5)){
+		console.log("Buzz")
+
+	}
+	else if (Number.isInteger(n/3)){
+		console.log("Fizz")
+
+	}
+	else{
+		console.log(n)
+	}
+	
+	
+
 
 
 	// Leave the console.log below at the bottom of the function
 	console.log("-------------");
+	x=1
 }
+
+
+
+
+
 
 fizzbuzz(16);
 fizzbuzz(25);
